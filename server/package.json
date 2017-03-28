@@ -1,5 +1,5 @@
 {
-  "name": "server",
+  "name": "credit-card-rewards-database",
   "version": "1.0.0",
   "main": "server.js",
   "license": "MIT",
