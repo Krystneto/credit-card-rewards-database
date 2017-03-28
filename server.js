@@ -4,8 +4,8 @@ const logger = require('morgan');
 const bodyParser = require('body-parser');
 const app = express();
 
-const mongoose = require('./api/config/database');
-const routes = require('./api/config/routes');
+const mongoose = require('./server/api/config/database');
+const routes = require('./server/api/config/routes');
 
 // CONFIG
 app.use(logger('dev'));
