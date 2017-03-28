@@ -2,17 +2,25 @@
 <html>
 <head>
   <title>Credit Card Rewards Database</title>
+  <link href="./main.css" rel="stylesheet">
 </head>
 <body>
-  <form method="POST" action="/creditcards">
+  <form method="POST" action="http://localhost:3000/creditcards">
     <h1>Credit Card Rewards Database</h1>
-    <h4>Name</h4>
-      <input type="text" placeholder="name">
+    <h4>Card Name</h4>
+      <input type="text" name="name" placeholder="name">
     <h4>Rewards By Category</h4>
-      <input type="text" placeholder="category"><input type="number" placeholder="5">
-    <h4>Valued Earnings</h4>
-      <input type="number" placeholder="2.2">
+      <p>Dining: <input type="number" name="dining" placeholder="5"></p>
+      <p>Travel: <input type="number" name="travel" placeholder="5"></p>
+      <p>Gas: <input type="number" name="gas" placeholder="5"></p>
+      <p>Costco: <input type="number" name="costco" placeholder="5"></p>
+      <p>Groceries: <input type="number" name="groceries" placeholder="5"></p>
+      <p>Entertainment: <input type="number" name="entertainment" placeholder="5"></p>
+      <p>Miscellaneous: <input type="number" name="miscellaneous" placeholder="5"></p>
+    <h4>Valued Earning</h4>
+      <input type="number" name="valuedEarning" placeholder="2.2">
     <button type="submit">Submit</button>
   </form>
+
 </body>
 </html>

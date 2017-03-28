@@ -18,6 +18,6 @@ router.route('/creditcards')
 
   .get(creditcardsController.showAll)
 
-
+  .post(creditcardsController.createCard)
 
 module.exports = router;
