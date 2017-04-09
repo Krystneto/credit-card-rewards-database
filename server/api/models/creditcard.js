@@ -5,11 +5,17 @@ const CreditCardSchema = mongoose.Schema({
   name: String,
   category: {
     dining: Number,
-    travel: Number,
+    airfare: Number,
+    hotels: Number,
+    ground_transportation: Number,
     gas: Number,
-    costco: Number,
+    amazon: Number,
+    wholesale_clubs: Number,
     groceries: Number,
+    department: Number,
     entertainment: Number,
+    home_improvement: Number,
+    drug_stores: Number,
     miscellaneous: Number
   },
   valuedEarning: Number
