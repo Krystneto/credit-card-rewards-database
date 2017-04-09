@@ -9,7 +9,8 @@ showAll = (req, res) => {
 }
 
 createCard = (req, res) => {
-  let {dining, travel, gas, costco, groceries, entertainment, miscellaneous} = req.body
+  let { dining, airfare, hotels, ground_transportation, gas, wholesale_clubs, groceries, department_stores, entertainment, home_improvement, drug_stores, miscellaneous} = req.body
+  let categories = req.body.category
   let name = req.body.name;
   let valuedEarning = req.body.valuedEarning;
 
@@ -17,11 +18,16 @@ createCard = (req, res) => {
     name,
     category: {
       dining,
-      travel,
+      airfare,
+      hotels,
+      ground_transportation,
       gas,
-      costco,
+      wholesale_clubs,
       groceries,
+      department_stores,
       entertainment,
+      home_improvement,
+      drug_stores,
       miscellaneous
     },
     valuedEarning
