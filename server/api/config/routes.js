@@ -14,7 +14,7 @@ router.route('/users')
   // POST a new user to the Database
   .post(usersController.createUser);
 
-router.route('/creditcards')
+router.route('/creditcards.json')
 
   .get(creditcardsController.showAll)
 

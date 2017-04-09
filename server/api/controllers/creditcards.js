@@ -9,8 +9,7 @@ showAll = (req, res) => {
 }
 
 createCard = (req, res) => {
-  let { dining, airfare, hotels, ground_transportation, gas, wholesale_clubs, groceries, department_stores, entertainment, home_improvement, drug_stores, miscellaneous} = req.body
-  let categories = req.body.category
+  let { dining, airfare, hotels, ground_transportation, gas, wholesale_clubs, groceries, department_stores, entertainment, home_improvement, drug_stores, miscellaneous} = req.body;
   let name = req.body.name;
   let valuedEarning = req.body.valuedEarning;
 
