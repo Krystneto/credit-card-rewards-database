@@ -12,7 +12,7 @@ const CreditCardSchema = mongoose.Schema({
     amazon: Number,
     wholesale_clubs: Number,
     groceries: Number,
-    department: Number,
+    department_stores: Number,
     entertainment: Number,
     home_improvement: Number,
     drug_stores: Number,
