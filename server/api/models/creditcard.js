@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 
 const CreditCardSchema = mongoose.Schema({
   name: String,
+  image: String,
   category: {
     dining: Number,
     airfare: Number,

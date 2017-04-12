@@ -11,10 +11,12 @@ showAll = (req, res) => {
 createCard = (req, res) => {
   let { dining, airfare, hotels, ground_transportation, gas, wholesale_clubs, groceries, department_stores, entertainment, home_improvement, drug_stores, miscellaneous} = req.body;
   let name = req.body.name;
+  let image = req.body.image;
   let valuedEarning = req.body.valuedEarning;
 
   let cardInfo = {
     name,
+    image,
     category: {
       dining,
       airfare,
