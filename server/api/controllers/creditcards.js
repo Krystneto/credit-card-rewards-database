@@ -4,7 +4,7 @@ showAll = (req, res) => {
   CreditCard.find( (err, creditcards) => {
     if (err) res.json({message: 'Could not find any credit cards'});
 
-    res.json({creditcards: creditcards})
+    res.json({data: creditcards})
   })
 }
 
@@ -37,7 +37,8 @@ createCard = (req, res) => {
   let creditcard = new CreditCard(cardInfo);
 
   creditcard.save( (err) => {
-    if (err) return console.error(err);
+    if (err) { return console.error(err); }
+
     res.json({creditcard: creditcard})
   })
 }

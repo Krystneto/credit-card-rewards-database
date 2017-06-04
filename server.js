@@ -1,4 +1,4 @@
-require('dotenv');
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const logger = require('morgan');
@@ -10,7 +10,7 @@ const mongoose = require('./server/api/config/database');
 const routes = require('./server/api/config/routes');
 
 const corsOptions = {
-  origin: 'www.google.com',
+  origin: 'https://credit-rewards-cheatsheet.herokuapp.com' || 'http://localhost:3000',
   optionsSuccessStatus: 200
 };
 
@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 // });
 
 // ROUTES
-app.use('/', routes);
+app.use('/api/', routes);
 
 const port = process.env.PORT || 3000
 app.listen(port, () => {
