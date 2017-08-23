@@ -10,7 +10,7 @@ const mongoose = require('./server/api/config/database');
 const routes = require('./server/api/config/routes');
 
 const corsOptions = {
-  origin: 'https://credit-rewards-cheatsheet.herokuapp.com' || 'http://localhost:3000/',
+  origin: 'https://credit-rewards-cheatsheet.herokuapp.com' || 'http://localhost:3000/' || 'http://localhost:3000/dashbaord',
   optionsSuccessStatus: 200
 };
 
